@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infraestrutura", "..\Infrae
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dominio", "..\Dominio\Dominio.csproj", "{87A67411-05F9-4AB1-878E-70FF0FF376A1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogic", "..\BusinessLogic\BusinessLogic.csproj", "{72F8859A-CB99-47CE-B200-ADC58D831B09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aplication", "..\Aplication\Aplication.csproj", "{C29C2A71-0118-42D3-AEDF-DDB696AE4584}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +31,10 @@ Global
 		{87A67411-05F9-4AB1-878E-70FF0FF376A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87A67411-05F9-4AB1-878E-70FF0FF376A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87A67411-05F9-4AB1-878E-70FF0FF376A1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{72F8859A-CB99-47CE-B200-ADC58D831B09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{72F8859A-CB99-47CE-B200-ADC58D831B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{72F8859A-CB99-47CE-B200-ADC58D831B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{72F8859A-CB99-47CE-B200-ADC58D831B09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C29C2A71-0118-42D3-AEDF-DDB696AE4584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C29C2A71-0118-42D3-AEDF-DDB696AE4584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C29C2A71-0118-42D3-AEDF-DDB696AE4584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C29C2A71-0118-42D3-AEDF-DDB696AE4584}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
