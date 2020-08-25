@@ -9,6 +9,7 @@ using AppAndev.Models;
 
 namespace AppAndev.Controllers
 {
+
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

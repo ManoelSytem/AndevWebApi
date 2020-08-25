@@ -34,6 +34,7 @@ C:\Users\Tees\source\repos\AndevWebApi\WebApiAndev\bin\Debug\netcoreapp3.1\Andev
 C:\Users\Tees\source\repos\AndevWebApi\WebApiAndev\bin\Debug\netcoreapp3.1\AndevOpsApi.runtimeconfig.dev.json
 C:\Users\Tees\source\repos\AndevWebApi\WebApiAndev\bin\Debug\netcoreapp3.1\AndevOpsApi.dll
 C:\Users\Tees\source\repos\AndevWebApi\WebApiAndev\bin\Debug\netcoreapp3.1\AndevOpsApi.pdb
+C:\Users\Tees\source\repos\AndevWebApi\WebApiAndev\obj\Debug\netcoreapp3.1\AndevOpsApi.csprojAssemblyReference.cache
 C:\Users\Tees\source\repos\AndevWebApi\WebApiAndev\obj\Debug\netcoreapp3.1\AndevOpsApi.AssemblyInfoInputs.cache
 C:\Users\Tees\source\repos\AndevWebApi\WebApiAndev\obj\Debug\netcoreapp3.1\AndevOpsApi.AssemblyInfo.cs
 C:\Users\Tees\source\repos\AndevWebApi\WebApiAndev\obj\Debug\netcoreapp3.1\AndevOpsApi.csproj.CoreCompileInputs.cache
