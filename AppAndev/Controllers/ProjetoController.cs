@@ -37,7 +37,7 @@ namespace AppAndev.Controllers
         {
             try
             {
-                var resultado = collection.Get().Result;
+                var resultado = collection. Get().Result;
                 return RedirectToAction(nameof(Index));
             }
             catch(Exception e)

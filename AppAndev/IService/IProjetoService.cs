@@ -11,7 +11,6 @@ namespace AppAndev.IService
     {
         [Get("/Contador")]
         Task<ProjetoModel> Salvar();
-        [Get("/weatherforecast")]
-        Task<WeatherForecast> Get();
+        Task<ProjetoModel> Get();
     }
 }

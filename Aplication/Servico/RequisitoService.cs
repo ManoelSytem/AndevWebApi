@@ -10,33 +10,33 @@ namespace BusinessLogic.Servico
 {
     public class RequisitoService : IDisposable
     {
-        IUnitOfWork<Requisito> _uow;
-        public RequisitoService(IUnitOfWork<Requisito> uow)
+        UnitOfWork _uow;
+        public RequisitoService()
         {
-            _uow = uow;
+            _uow = new UnitOfWork();
         }
         public IEnumerable<Requisito> ListarRequisito()
         {
-            return _uow.Repository.Get();
+            return _uow.RequisitoRepository.Get();
         }
         public void AdicionarRequisito(Requisito cli)
         {
-            _uow.Repository.Add(cli);
+            _uow.RequisitoRepository.Add(cli);
             _uow.Commit();
         }
         public void ExcluirRequisito(Requisito cli)
         {
-            _uow.Repository.Delete(cli);
+            _uow.RequisitoRepository.Delete(cli);
             _uow.Commit();
         }
         public void AlterarRequisito(Requisito cli)
         {
-            _uow.Repository.Update(cli);
+            _uow.RequisitoRepository.Update(cli);
             _uow.Commit();
         }
         public Requisito GetRequisitoPorId(int codigo)
         {
-            return _uow.Repository.GetById(c => c.codReq == codigo);
+            return _uow.RequisitoRepository.GetById(c => c.codReq == codigo);
         }
         public void Dispose()
         {

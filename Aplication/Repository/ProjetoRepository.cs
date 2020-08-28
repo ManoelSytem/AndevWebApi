@@ -17,7 +17,7 @@ namespace BusinessLogic.Repository
         }
         public void Add(Projeto entity)
         {
-            throw new NotImplementedException();
+            _context.Projeto.Add(entity);
         }
 
         public void Delete(Projeto entity)

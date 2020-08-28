@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AndevOpsApi", "AndevOpsApi.csproj", "{57EF7DB4-EA2A-4FF4-B849-D5B001913D42}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AndevWebApi", "AndevWebApi", "{0646C0BE-4E70-437F-A476-4B1F45D82613}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 -AndevWebApi", "02 -AndevWebApi", "{0646C0BE-4E70-437F-A476-4B1F45D82613}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infraestrutura", "..\Infraestrutura\Infraestrutura.csproj", "{854336CE-E635-4C6C-A8D2-0E363C505846}"
 EndProject
@@ -13,9 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dominio", "..\Dominio\Domin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aplication", "..\Aplication\Aplication.csproj", "{C29C2A71-0118-42D3-AEDF-DDB696AE4584}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{09029B58-88F1-4EF5-B9DA-85586369EEF2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Presentation", "01 - Presentation", "{09029B58-88F1-4EF5-B9DA-85586369EEF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppAndev", "..\AppAndev\AppAndev.csproj", "{A04CB3BD-DD1F-423C-AF57-573878CB6E98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppAndev", "..\AppAndev\AppAndev.csproj", "{A04CB3BD-DD1F-423C-AF57-573878CB6E98}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Aplication", "03 - Aplication", "{354AE096-4C9A-4139-8EFD-B85DF1B8B82E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Dominio", "04 - Dominio", "{1F456E1C-35A5-4DF1-AE72-DE98C3C83D21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Infraestrutura", "05 - Infraestrutura", "{7F962D48-F819-4628-A437-295CB7D2D280}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +55,9 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{57EF7DB4-EA2A-4FF4-B849-D5B001913D42} = {0646C0BE-4E70-437F-A476-4B1F45D82613}
+		{854336CE-E635-4C6C-A8D2-0E363C505846} = {7F962D48-F819-4628-A437-295CB7D2D280}
+		{87A67411-05F9-4AB1-878E-70FF0FF376A1} = {1F456E1C-35A5-4DF1-AE72-DE98C3C83D21}
+		{C29C2A71-0118-42D3-AEDF-DDB696AE4584} = {354AE096-4C9A-4139-8EFD-B85DF1B8B82E}
 		{A04CB3BD-DD1F-423C-AF57-573878CB6E98} = {09029B58-88F1-4EF5-B9DA-85586369EEF2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

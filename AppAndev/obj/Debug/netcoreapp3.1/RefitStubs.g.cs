@@ -66,11 +66,9 @@ namespace AppAndev.IService
         }
 
         /// <inheritdoc />
-        Task<WeatherForecast> IProjetoService.Get()
+        Task<ProjetoModel> IProjetoService.Get()
         {
-            var arguments = new object[] {  };
-            var func = requestBuilder.BuildRestResultFuncForMethod("Get", new Type[] {  });
-            return (Task<WeatherForecast>)func(Client, arguments);
+            throw new NotImplementedException("Either this method has no Refit HTTP method attribute or you've used something other than a string literal for the 'path' argument.");
         }
     }
 }

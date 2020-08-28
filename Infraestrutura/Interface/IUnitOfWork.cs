@@ -5,9 +5,13 @@ using System.Text;
 
 namespace InfraEstrutura.Interface
 {
-    public interface IUnitOfWork<T> where T : class
+    public interface IUnitOfWork
     {
-        IRepository<T> Repository { get; }
+        IRepository<Projeto> ProjetoRepository { get; }
+        IRepository<Modulo> ModuloRepository { get; }
+        IRepository<Requisito> RequisitoRepository { get; }
+        IRepository<Tipo> TipoRepository { get; }
+
         void Commit();
         void Dispose();
     }

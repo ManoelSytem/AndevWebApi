@@ -1,5 +1,6 @@
 ﻿using Dominio;
 using InfraEstrutura.Interface;
+using InfraEstrutura.Repository;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,28 +9,28 @@ namespace Aplication.Servico
 {
     public class TipoService : IDisposable
     {
-        IUnitOfWork<Tipo> _uow;
-        public TipoService(IUnitOfWork<Tipo> uow)
+        UnitOfWork _uow;
+        public TipoService()
         {
-            _uow = uow;
+            _uow = new UnitOfWork();
         }
         public IEnumerable<Tipo> Listar()
         {
-            return _uow.Repository.Get();
+            return _uow.TipoRepository.Get();
         }
         public void Adicionar(Tipo cli)
         {
-            _uow.Repository.Add(cli);
+            _uow.TipoRepository.Add(cli);
             _uow.Commit();
         }
         public void Excluir(Tipo cli)
         {
-            _uow.Repository.Delete(cli);
+            _uow.TipoRepository.Delete(cli);
             _uow.Commit();
         }
         public void Alterar(Tipo cli)
         {
-            _uow.Repository.Update(cli);
+            _uow.TipoRepository.Update(cli);
             _uow.Commit();
         }
 

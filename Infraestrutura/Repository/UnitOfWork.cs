@@ -6,11 +6,15 @@ using System.Text;
 
 namespace InfraEstrutura.Repository
 {
-    
-    public class UnitOfWork<T> : IUnitOfWork<T> where T : class, IDisposable
+
+    public class UnitOfWork : IUnitOfWork, IDisposable
     {
         public AplicationDbContext _context;
-        private RepositoryGeneric<T> _repository;
+        private RepositoryGeneric<Projeto> _repository;
+        private RepositoryGeneric<Modulo> _moduloRepository;
+        private RepositoryGeneric<Requisito> _requisitoRepository;
+        private RepositoryGeneric<Tipo> _tipoRepository;
+
         public UnitOfWork(AplicationDbContext context)
         {
             _context = context;
@@ -19,13 +23,38 @@ namespace InfraEstrutura.Repository
         {
             _context = new AplicationDbContext();
         }
-        public IRepository<T> Repository
+        public IRepository<Projeto> ProjetoRepository
         {
             get
             {
-                return _repository = _repository ?? new RepositoryGeneric<T>(_context);
+                return _repository = _repository ?? new RepositoryGeneric<Projeto>(_context);
             }
         }
+
+        public IRepository<Modulo> ModuloRepository
+        {
+            get
+            {
+                return _moduloRepository = _moduloRepository ?? new RepositoryGeneric<Modulo>(_context);
+            }
+        }
+
+        public IRepository<Requisito> RequisitoRepository
+        {
+            get
+            {
+                return _requisitoRepository = _requisitoRepository ?? new RepositoryGeneric<Requisito>(_context);
+            }
+        }
+
+        public IRepository<Tipo> TipoRepository
+        {
+            get
+            {
+                return _tipoRepository = _tipoRepository ?? new RepositoryGeneric<Tipo>(_context);
+            }
+        }
+
         public void Commit()
         {
             _context.SaveChanges();
